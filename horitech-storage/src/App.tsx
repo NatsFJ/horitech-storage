@@ -2,6 +2,7 @@
 import Estoque from "./pages/Estoque"
 import Dashboard from "./pages/Dashboard"
 import {Routes, Route, Navigate} from "react-router-dom"
+import MainLayout from "./layouts/MainLayout"
 
 
 function App() {
@@ -11,8 +12,10 @@ function App() {
       <p>Sistema de gerenciamento de estoque</p>
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard"/>}/>
+        <Route element={<MainLayout/>}>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/estoque" element={<Estoque/>} />
+        </Route>
       </Routes>
     </div>
   )
