@@ -1,4 +1,4 @@
-
+import Solicitações from "./pages/Solicitações"
 import Estoque from "./pages/Estoque"
 import Dashboard from "./pages/Dashboard"
 import {Routes, Route, Navigate} from "react-router-dom"
@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<Navigate to="/dashboard"/>}/>
         <Route element={<MainLayout/>}>
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/solicitacoes" element={<Solicitações />} />
         <Route path="/estoque" element={<Estoque/>} />
         </Route>
       </Routes>

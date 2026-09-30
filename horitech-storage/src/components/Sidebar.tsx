@@ -6,6 +6,7 @@ function Sidebar() {
     <div>
     <Link to="/dashboard">Dashboard</Link>
     <Link to="/estoque">Estoque</Link>
+    <Link to="/solicitacoes">Solicitações</Link>
     </div>
   );
 }
