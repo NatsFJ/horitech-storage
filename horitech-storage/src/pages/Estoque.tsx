@@ -17,5 +17,8 @@ const produtos = [
 {produtos.map((produto) => (
   <p key={produto.id}>
     {produto.nome} - {produto.quantidade} unidades
+
+    {produtos.quantidade <10 && <span>Estoque baixo!</span>}
     </p>
 ))}
+
