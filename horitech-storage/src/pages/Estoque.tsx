@@ -8,6 +8,8 @@ function Estoque() {
 }
 export default Estoque;
 
+produtos.length
+
 const produtos = [
   {id: 1, nome: "Parafuso", quantidade: 50},
   {id: 2, nome: "Oléo", quantidade: 12},
