@@ -5,3 +5,11 @@ const PORT= 3000;
 app.listen(PORT, () => {
     console.log("Servidor rodando na porta ${PORT}");
 });
+
+app.get(`/`, function(req, res){
+    res.send("API da Horitec Storage")
+});
+
+app.get('/products', function(req, res){
+    res.send("Produtos")
+});
